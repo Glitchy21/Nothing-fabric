@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "nothing",
+  "version": "0.0-1.19",
+
+  "name": "Nothing",
+  "description": "A mod that adds no features, it is completely useless.",
+  "authors": [
+    "Glitchy"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "None, no credit needed.",
+  "icon": "assets/icon/nothing.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.glitchy.nothing.Nothing"
+    ],
+    "client": [
+      "net.glitchy.nothing.NothingClient"
+    ]
+  },
+  "mixins": [
+    "nothing.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
